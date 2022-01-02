@@ -1,4 +1,4 @@
-package account
+package binance
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ type UserData struct {
 	} `json:"positions"`
 }
 
-func (c *market.Client) AccountData() (res UserData, err error) {
+func (c *Client) AccountData() (res UserData, err error) {
 
 	url := fmt.Sprintf("%s%s", ContractBaseUrl, "/fapi/v2/account")
 
