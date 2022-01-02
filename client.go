@@ -1,4 +1,4 @@
-package market
+package binance
 
 import (
 	"crypto/hmac"
@@ -92,4 +92,3 @@ func handleError(resp *http.Response) error {
 	}
 	return nil
 }
-
